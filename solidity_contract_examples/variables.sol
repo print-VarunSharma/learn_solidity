@@ -27,3 +27,20 @@ contract Variables {
         address sender = msg.sender; // address of the caller
     }
 }
+
+contract TreeContract {
+    string public text = "Tree"
+    uint public num = 0123456789;
+
+    function stampTree() public {
+    uint i = 456;
+    uint timestamp = block.timestamp 
+    address sender = msg.sender
+
+    }
+
+    function treeNumId() public {
+        return 
+    }
+    
+} 
