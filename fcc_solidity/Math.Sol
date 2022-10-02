@@ -1,0 +1,12 @@
+pragma solidity 0.5.10;
+
+library Math {
+    // not a smart contract - intended to be used as helpers to contracts
+
+    function divide(uint256 a, uint256 b) internal pure returns (uint256) {
+        require(b > 0);
+        uint256 c = a / b;
+        return c;
+    }
+
+}
