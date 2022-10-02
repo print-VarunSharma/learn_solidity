@@ -8,7 +8,7 @@ contract MyContract {
     event Purchase(address indexed _buyer, uint256 amount);
 // adding indexed will us to filter events from certain buyers/persons.
 
-    constructor(address payable  _wallet) public {
+    constructor(address payable _wallet) public {
         wallet = _wallet;
 
     }
@@ -20,7 +20,7 @@ contract MyContract {
     }
 
     // adding payable will ensure  the function can accept ether in the smart contract
-function buyToken()  public payable{
+function buyToken() public payable{
     // buy a token
     balances[msg.sender] += 1;
     wallet.transfer(msg.value);
